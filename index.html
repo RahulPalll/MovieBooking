@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 20%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+}
+
+#booking-confirmation {
+    margin-top: 20px;
+    font-weight: bold;
+}
+body {
+    background-color: #F5F5F5; /* Light gray */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #FFFFFF; /* White */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add a subtle box shadow */
+}
+
+h1 {
+    color: #4CAF50; /* Green */
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #9E9E9E; /* Gray */
+    font-size: 18px;
+}
+body {
+    background-image: linear-gradient(to bottom right, #64B5F6, #42A5F5); /* Add a gradient background */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* White with opacity */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add a subtle box shadow */
+}
+
+#book-btn {
+    background-color: #e57373; /* Red */
+    color: white;
+    cursor: pointer;
+}
+
+#book-btn:hover {
+    background-color: #ef5350; /* Darker red on hover */
+}
+
+#booking-confirmation {
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: #81C784; /* Green */
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+input, select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+#sign-in-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sign-in-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#sign-up-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sign-up-button {
+    background-color: #ff5722; /* Orange */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+</style>
+
+<body>
+    <div class="container">
+    <h1>Movie Booking</h1>
+    <div id="sign-in-container">
+        <button id="sign-in-button">Sign In</button>
+    </div>
+    
+    <div id="sign-up-container">
+        <button  id="sign-up-button">Sign Up</button>
+    </div>
+    <form>
+        <label>Select a movie:</label>
+        <select id="movie-select">
+            <option value="movie1">Movie 1</option>
+            <option value="movie2">Movie 2</option>
+            <option value="movie3">Movie 3</option>
+        </select>
+        <label>Select a date:</label>
+        <input type="date" id="date-select">
+        <label>Select a time:</label>
+        <select id="time-select">
+            <option value="time1">Time 1</option>
+            <option value="time2">Time 2</option>
+            <option value="time3">Time 3</option>
+        </select>
+        <label>Number of tickets:</label>
+        <input type="number" id="ticket-number" min="1">
+        <button id="book-btn">Book</button>
+    </form>
+    <div id="booking-confirmation"></div>
+</div>
+
+
+
+
+</body>
+<script src="movie.js"></script>
+</html>
